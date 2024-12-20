@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Nandini Thimmireddy Gari Portfolio</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+
+    <link rel="stylesheet" href="css/aos.css">
+
+    <link rel="stylesheet" href="css/ionicons.min.css">
+    
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/icomoon.css">
+    <link rel="stylesheet" href="css/style.css">
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+
+
+
+<style>
+
+/*======================================
+//--//-->   ABOUT
+======================================*/
+
+.about-mf .box-shadow-full {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.about-mf .about-img {
+  margin-bottom: 2rem;
+}
+
+.about-mf .about-img img {
+  margin-left: 10px;
+}
+
+
+.skill-mf .progress {
+  /* background-color: #cde1f8; */
+  margin: .5rem 0 1.2rem 0;
+  border-radius: 0;
+  height: .7rem;
+}
+
+.skill-mf .progress .progress-bar {
+  height: .7rem;
+  background-color: #01EEFF;
+}
+
+
+/* Animation styles */
+#typing-animation {
+  position: relative;
+  font-size: 30px;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  overflow: hidden;
+  white-space: nowrap;
+  animation: typing 3s steps(20, end) infinite;
+}
+
+#typing-animation:before {
+  content: "";
+  /* position: absolute; */
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: #ccc;
+  animation: typing-cursor 0.5s ease-in-out infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes typing-cursor {
+  from {
+    width: 5px;
+  }
+  to {
+    width: 0;
+  }
+}
+
+
+/* project image zoom effect */
+
+.zoom-effect {
+  overflow: hidden;
+  transition: transform 0.3s ease-out;
+}
+
+.zoom-effect:hover {
+  transform: scale(1.1);
+}
+
+
+</style>
+
+
+  </head>
+  <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+	  
+	  
+    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
+	    <div class="container">
+	      <a class="navbar-brand" href="index.html">Nandini Thimmireddy Gari</a>
+	      <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+	        <span class="oi oi-menu"></span> Menu
+	      </button>
+
+	      <div class="collapse navbar-collapse" id="ftco-nav">
+	        <ul class="navbar-nav nav ml-auto">
+	          <li class="nav-item"><a href="#home-section" class="nav-link"><span>Home</span></a></li>
+	          <li class="nav-item"><a href="#about-section" class="nav-link"><span>About</span></a></li>
+	          <li class="nav-item"><a href="#resume-section" class="nav-link"><span>Resume</span></a></li>
+	          <li class="nav-item"><a href="#project-section" class="nav-link"><span>Projects</span></a></li>
+	          <li class="nav-item"><a href="#contact-section" class="nav-link"><span>Contact</span></a></li>
+	        </ul>
+	      </div>
+	    </div>
+	  </nav>
+	  <section id="home-section" class="hero">
+		  <div class="home-slider  owl-carousel">
+	       <div class="slider-item ">
+	      	<div class="overlay"></div>
+	         <div class="container">
+	          <div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end" data-scrollax-parent="true">
+	        <div class="one-third js-fullheight order-md-last img" style="background-image:url(images/nandini_2\ \(1\).png);">
+				
+	          	 <div class="overlay"></div>
+	          	</div>
+
+			
+				
+				  
+		          <div class="one-forth d-flex  align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
+		          	<div class="text">
+		          		<span class="subheading">Hello!</span>
+			            <h1 class="mb-4 mt-3">I'm <span>Nandini</span></h1>
+
+						<!-- Element to contain animated typing -->
+						<span id="typing-animation"></span>
+
+						<script>
+
+						// Initialize the typing animation
+						const typingAnimationElement = document.getElementById('typing-animation');
+
+						// Create an array of typing text
+						const typingTexts = [
+						'Let\'s Connect  '
+						
+						];
+
+						// Create a function to display the typing animation for a given text
+						function playTypingAnimation(text) {
+						// Loop through each character and add it to the element
+						for (let i = 0; i < text.length; i++) {
+							setTimeout(() => {
+							typingAnimationElement.textContent += text[i];
+							}, i * 200); // Increase the delay to slow down the typing animation
+						}
+
+						// Once the animation is complete, reset the text and start over
+						setTimeout(() => {
+							typingAnimationElement.textContent = '';
+							playTypingAnimation(typingTexts[(typingTexts.indexOf(text) + 1) % typingTexts.length]);
+						}, text.length * 200);
+						}
+
+						// Start the typing animation loop
+						playTypingAnimation(typingTexts[0]);
+
+						</script>
+
+						<br>
+						<br>
+	
+			            <p><a href="https://www.linkedin.com/in/nandini-thimmireddygari-900769207/" target="_blank" class="btn btn-primary py-3 px-4">LinkedIn</a> 
+							<a href="Nandini_Resume.pdf" target="_blank" rel="noopener noreferrer"  class="btn btn-primary py-3 px-4">Resume</a> 
+							<br>
+							<br> 
+							<a href="https://github.com/Nandini-678" target="_blank" class="btn btn-white btn-outline-white py-3 px-4">My works</a>
+							</p>
+		            </div>
+		          </div>
+	        	</div>
+	        </div>
+	      </div>
+		</div>
+    </section>
+
+
+
+    <section class="ftco-about img ftco-section ftco-no-pb" id="about-section">
+    	<div class="container">
+			<div class="row">
+				<div class="row d-flex align-items-stretch">
+				<!-- <div class="row d-flex"> -->
+					<div class="col-md-6 col-lg-5 d-flex">
+						<div class="img-about img d-flex align-items-stretch">
+							<div class="overlay">
+								<div class="row">
+									
+									  <div class="about-img">
+										<img src="images/about-image.png" class="img-fluid rounded b-shadow-a" alt="">
+									  </div>
+									
+									<!-- Details next to profile image -->
+									
+								  </div>
+
+								<div class="skill-mf">
+									<p class="title-s">Skills</p>
+									<span>SQL</span> <span class="pull-right">75%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 75%;" aria-valuenow="75" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+									
+									<span>Python Programming</span> <span class="pull-right">90%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+									
+									<span>Data Visualization</span> <span class="pull-right">90%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+
+									<span>AI & ML </span> <span class="pull-right">85%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+									
+									<span>Statistical Analysis</span> <span class="pull-right">80%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+									
+									<span>Web Development</span> <span class="pull-right">70%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 70%" aria-valuenow="70" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+					<div class="col-md-6 col-lg-7 pl-lg-5 pb-5">
+						<div class="row justify-content-start pb-3">
+							<div class="col-md-12 heading-section ftco-animate">
+								
+								<h1 class="big">About</h1>
+								<h2 class="mb-4">About Me</h2>
+								
+								<p>Graduate student in Computer Science with a strong passion for Data science, 
+									Machine learning, and Artificial intelligence. With experience in Data analysis, Visualization, and advanced machine learning models, 
+									I excel in solving complex problems. My skills include Python, Power BI, Tableau, and tools like TensorFlow and PyTorch. 
+									I enjoy leveraging technology to drive innovation and deliver impactful solutions.</p>
+									<ul class="skills-list">
+										<li class="d-flex">
+										  <span class="label">Programming & Scripting Languages:</span>
+										  <span class="content">Python, R, JavaScript, HTML, CSS, PHP, Java</span>
+										</li>
+										<li class="d-flex">
+										  <span class="label">Data Science & Machine Learning Libraries:</span>
+										  <span class="content">Sklearn, Seaborn, Pandas, TensorFlow, Keras, PyTorch</span>
+										</li>
+										<li class="d-flex">
+										  <span class="label">Data Visualization & Business Intelligence Tools:</span>
+										  <span class="content">Power BI, Tableau, Plotly, Matplotlib</span>
+										</li>
+										<li class="d-flex">
+										  <span class="label">Cloud & Database Technologies:</span>
+										  <span class="content">MySQL, Apache Hive, Hadoop, AWS</span>
+										</li>
+										<li class="d-flex">
+										  <span class="label">Design Tools & Version Control:</span>
+										  <span class="content">Figma, Git, Spark AR</span>
+										</li>
+									  </ul>
+									  
+									  
+							</div>
+						</div>
+
+
+						
+					</div>
+				</div>
+			</div>
+		</div>
+    </section>
+
+
+
+	
+    <section class="ftco-section ftco-no-pb" id="resume-section">
+    	<div class="container">
+    		<div class="row justify-content-center pb-5">
+          <div class="col-md-10 heading-section text-center ftco-animate">
+          	<h1 class="big big-2">Resume</h1>
+            <h2 class="mb-4">Resume</h2>
+            <p> Dynamic Data Analyst and Machine Learning Enthusiast with Expertise in Advanced Analytics and Visualization. Proven expertise in data science, statistical analysis, machine learning algorithms and project management.</p>
+          </div>
+        </div>
+
+		<div class="row">
+			<h1 class="big-4">Experience</h1>
+			<div class="underline"></div>
+		</div>
+		<br>
+		
+		<div class="row">
+				<div class="col-md-6">
+					<div class="resume-wrap ftco-animate">
+						<span class="date">May 2024 -Aug 2024</span>
+						<h2>Data Analyst Summer Intern </h2>
+						<span class="position">Apollo Hospitals Pvt, Ltd</span>
+						<p class="mt-4">Apollo Hospitals Pvt. Ltd., India's largest for-profit healthcare network, operates a vast chain of multi-specialty hospitals across the country. 
+							<ul>
+								<li>Conducted a comprehensive customer segmentation analysis using RFM with quartile ranges and k-means clustering,
+									and presented insights via Power BI dashboards. Achieved a 15% increase in marketing campaign efficiency by
+									identifying high-value customer segments.
+									</li>
+								<li>Optimized supply chain processes by applying advanced inventory management techniques and seasonality
+									forecasting, leading to a 10% reduction in stockouts and 5% cost savings.</li>
+							</ul>
+						</p>
+					</div>
+
+				</div>
+
+				<div class="col-md-6">
+					<div class="resume-wrap ftco-animate">
+						<span class="date">May 2022 -Aug 2022 </span>
+						<h2>Data Science Training Intern </h2>
+						<span class="position">APSSDC and Indo-Euro Synchronization Pvt, Ltd</span>
+						<p class="mt-4">APSSDC and Indo-Euro Synchronization Pvt. Ltd. provide online industrial training and internship programs in "Data Sciences" for Computer Science and IT engineering students.
+							<ul>
+								<li>Conducted comprehensive data analysis projects, including student performance analysis using classification
+									techniques, and compared PCA and t-SNE for data visualization with K-means and Linear SVC to evaluate model
+									accuracy and cluster integrity.
+									</li>
+								<li>Executed web scraping with R to extract specific information from websites, overcoming challenges in pagination and
+									data consistency.</li>
+							</ul>
+						</p>
+					</div>
+
+				</div>
+			</div>
+
+		<br>
+		<br>
+
+		<div class="row">
+			<h1 class="big-4">Education</h1>
+			<div class="underline"></div>
+		</div>
+		<br>
+		
+			<div class="row">
+    			<div class="col-md-6">
+    				<div class="resume-wrap ftco-animate">
+    					<span class="date">2023 - 2024</span>
+    					<h2>Masters of Science</h2>
+						<h5>Computer Science</h5>
+    					<span class="position">New Jersey Institute of Technology, USA</span>
+    					<p class="mt-4">GPA: 3.8 / 4</p>
+    				</div>
+    			</div>
+
+    			<div class="col-md-6">
+    				<div class="resume-wrap ftco-animate">
+    					<span class="date">2019-2023</span>
+    					<h2>Bachelor of Technology</h2>
+						<h5>Computer Science with Big Data Specialization</h5>
+    					<span class="position">SRM University, India</span>
+    					<p class="mt-4">GPA: 8.7 / 10</p>
+    				</div>
+				</div>
+    		</div>
+			<div class="row">
+				<h1 class="big-4">Gallery</h1>
+				<div class="underline"></div>
+			</div>
+			<br>
+			<div class="owl-carousel slider">
+				<div class="item"><img src="images/1.png" alt="Slide 1"></div>
+				<div class="item"><img src="images/2.png" alt="Slide 1"></div>
+				<div class="item"><img src="images/3.png" alt="Slide 1"></div>
+				<div class="item"><img src="images/4.png" alt="Slide 1"></div>
+				<div class="item"><img src="images/5.png" alt="Slide 1"></div>
+				<div class="item"><img src="images/6.png" alt="Slide 1"></div>
+	
+			</div>
+			  
+			  </div>
+			  
+			  
+
+    		<div class="row justify-content-center mt-5">
+    			<div class="col-md-6 text-center ftco-animate">
+    				<p><a href="Nandini_Resume.pdf" target="_blank" rel="noopener noreferrer"  class="btn btn-primary py-4 px-5">Download CV</a></p>
+    			</div>
+    		</div>
+    	</div>
+    </section>
+
+   
+
+    <section class="ftco-section" id="project-section">
+      <div class="container">
+        <div class="row justify-content-center mb-5 pb-5">
+          <div class="col-md-7 heading-section text-center ftco-animate">
+            <h1 class="big big-2">Projects</h1>
+            <h2 class="mb-4">Projects</h2>
+            <p>Below are some of My projects on Python, Power BI, ML & Data Science.</p>
+          </div>
+        </div>
+        <div class="row d-flex">
+          <div class="col-md-4 d-flex ftco-animate">
+          	<div class="blog-entry justify-content-end">
+              <a href="https://www.kaggle.com/code/nandinithimmireddyg/feature-selection-techniques-on-ml-models-94-acc" target="_blank" class="block-20 zoom-effect" style="background-image: url('images/p1.jpeg');">
+              </a>
+              <div class="text mt-3 float-right d-block">
+
+                <h3 class="heading"><a href="https://www.kaggle.com/code/nandinithimmireddyg/feature-selection-techniques-on-ml-models-94-acc" target="_blank">Customer Churn Prediction | Python library - sklearn, Machine learning models</a></h3>
+                <p>Developed and optimized machine learning models, achieving a 94% accuracy rate using Random Forest and
+					Random Over Sampling, surpassing existing Kaggle benchmarks.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 d-flex ftco-animate">
+          	<div class="blog-entry justify-content-end">
+              <a href="https://github.com/Nandini-678?tab=repositories" target="_blank" class="block-20 zoom-effect" style="background-image: url('images/p2.jpeg');">
+              </a>
+              <div class="text mt-3 float-right d-block">
+
+                <h3 class="heading"><a href="https://github.com/Nandini-678?tab=repositories" target="_blank">AI in Architecture: Self-Organizing Plans | Genarative AI Models</a></h3>
+                <p>Contributed to a term project focused on creating self-organizing architectural floor plans using advanced machine
+					learning models, including GNN, GAN, and VAE.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 d-flex ftco-animate">
+          	<div class="blog-entry">
+              <a href="https://github.com/Nandini-678/ML-Project-on-Tomato-leaf-disease-prediction" target="_blank" class="block-20 zoom-effect" style="background-image: url('images/p3.jpeg');">
+              </a>
+              <div class="text mt-3 float-right d-block">
+
+                <h3 class="heading"><a href="https://github.com/Nandini-678/ML-Project-on-Tomato-leaf-disease-prediction" target="_blank">The Tomato Plant Disease Detection System | Convolutional Neural Networks</a></h3>
+                <p>By employing advanced models like MobileNetV3 and EfficientNet, this system reduces crop loss and improves the quality of tomato yields, supporting agricultural experts and farmers.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+	<br>
+		<!-- added justify-content-center to center align the last two projects -->
+		<div class="row d-flex justify-content-center">  
+			<div class="col-md-4 d-flex ftco-animate">
+				<div class="blog-entry justify-content-end">
+				<a href="https://github.com/Nandini-678/AI-Learning-Models-In-Seismology" target="_blank" class="block-20 zoom-effect" style="background-image: url('images/p4.jpeg');">
+				</a>
+				<div class="text mt-3 float-right d-block">
+  
+				  <h3 class="heading"><a href="https://github.com/Nandini-678/AI-Learning-Models-In-Seismology" target="_blank">Application of Machine Learning Models in Seismology | Machine Learning models</a></h3>
+				  <p>The project leverages machine learning and deep learning techniques to develop predictive models that can help mitigate the impacts of earthquakes </p>
+				</div>
+			  </div>
+			</div>
+			<div class="col-md-4 d-flex ftco-animate">
+				<div class="blog-entry justify-content-end">
+				<a href="https://github.com/Nandini-678/Sales-Revenue-Analysis-Dashboard/tree/main" target="_blank" class="block-20 zoom-effect" style="background-image: url('images/p5.png');">
+				</a>
+				<div class="text mt-3 float-right d-block">
+  
+				  <h3 class="heading"><a href="https://github.com/Nandini-678/Sales-Revenue-Analysis-Dashboard/tree/main" target="_blank">Sales Revenue Analysis Dashboard | Power BI</a></h3>
+				  <p>This project involves creating an interactive dashboard for analyzing sales revenue data across multiple dimensions, including regions, products, stores, sales representatives, and demographics.</p>
+				</div>
+			  </div>
+			</div>
+		 </div>
+		 <br>
+		 <div class="row justify-content-center">
+			<div class="col-md-7 ftco-animate text-center">
+				<h2>More<span> Projects  </span> <a href="https://github.com/Nandini-678" target="_blank" class="btn btn-primary py-3 px-5">Click Here</a> </h2>
+			</div>
+		</div>
+	  </div>
+    </section>
+
+	
+
+
+
+    <section class="ftco-section contact-section ftco-no-pb" id="contact-section">
+		<div class="container">
+		  <div class="row justify-content-center mb-5 pb-3">
+			<div class="col-md-7 heading-section text-center ftco-animate">
+			  <h1 class="big big-2">Contact</h1>
+			  <h2 class="mb-4">Contact Me</h2>
+			  <p>Below are the details to reach out to me!</p>
+			</div>
+		  </div>
+	  
+		  <div class="row d-flex contact-info mb-5">
+			<!-- Address -->
+			<div class="col-md-6 col-lg-3 d-flex ftco-animate">
+			  <div class="align-self-stretch box p-4 text-center border rounded">
+				<h3 class="mb-4">Address</h3>
+				<p>New Jersey, USA</p>
+			  </div>
+			</div>
+			<!-- Phone Number -->
+			<div class="col-md-6 col-lg-3 d-flex ftco-animate">
+			  <div class="align-self-stretch box p-4 text-center border rounded">
+				<h3 class="mb-4">Contact Number</h3>
+				<p><a href="tel:+1-973-489-9751" style="text-decoration: none; color: inherit;">+1-973-489-9751</a></p>
+			  </div>
+			</div>
+			<!-- Email -->
+			<div class="col-md-6 col-lg-3 d-flex ftco-animate">
+			  <div class="align-self-stretch box p-4 text-center border rounded">
+				<h3 class="mb-4">Email Address</h3>
+				<p><a href="mailto:nandinithimmireddygari@gmail.com" style="text-decoration: none; color: inherit;">nandinithimmireddygari@gmail.com</a></p>
+			  </div>
+			</div>
+			<!-- Resume -->
+			<div class="col-md-6 col-lg-3 d-flex ftco-animate">
+			  <div class="align-self-stretch box p-4 text-center border rounded">
+				<h3 class="mb-4">Download Resume</h3>
+				<p><a href="Nandini_Resume.pdf" target="_blank" rel="noopener noreferrer" style="text-decoration: none; color: inherit;">Download Resume</a></p>
+			  </div>
+			</div>
+		  </div>
+		</div>
+	  </section>
+	  
+	  
+
+
+ 
+	
+    <footer class="ftco-footer ftco-section">
+		<div class="container">
+		  <div class="row">
+			<div class="col-md-12 text-center">
+  
+			  <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+	Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart color-danger" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+	<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+			</div>
+		  </div>
+		</div>
+	  </footer>
+
+
+  <!-- loader -->
+  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.easing.1.3.js"></script>
+  <script src="js/jquery.waypoints.min.js"></script>
+  <script src="js/jquery.stellar.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/jquery.animateNumber.min.js"></script>
+  <script src="js/scrollax.min.js"></script>
+  
+  <script src="js/main.js"></script>
+
+
+    
+  </body>
+</html>
